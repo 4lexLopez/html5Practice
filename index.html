@@ -4,38 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding some google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Urbanist:wght@100&display=swap" rel="stylesheet">
+    
+    <!-- Style sheet link -->
+    <link rel="stylesheet" href="/css/style.css">
     <title>Mi hoja de vida</title>
+    
 </head>
 <body>
     <header>
         <h1>Mi hoja de vida</h1>
         <p>Bienvenidos!</p>
     </header>
-    <nav>
-        <br>
-        <hr>
-        <img src="img/photo.png" alt="My photo">
-        <br>
-        <hr>
-        <article>
-            <h3>Acerca de mi:</h3>
-        <p>En esta página demo podrá encontrar algunos de los aspectos que me caracterizan como profesional, si desea, 
-            puede descargar mi hoja en formato PDF haciendo click <a href="documents/CV18403220.pdf">AQUI</a></p>
-        <p>A continuacion, encontrará los enlaces con información relevante acerca de mi:</p>
-        <h3>Menu principal</h3>
-        </article>
-        <ul>
-            <li><a href="index.html">Página de inicio</a></li>
-            <li><a href="mainInfo.html">Información principal</a></li>
-            <li><a href="jobExperience.html">Experiencia laboral</a></li>
-            <li><a href="personalRef.html">Referencias personales</a></li>
-            <li><a href="familyRef.html">Referencias familiares</a></li>
-            <li><a href="educationLvl.html">Estudios realizados</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h3>Objetivo</h3>
-        <p>El objetivo de esta actividad consiste en comenzar a familiarizarse con la estructura y etiquetas de una página web en HTML5</p>
+
+    <section class="main">
+        <nav class="navbar">
+            <a href="index.html">Página de inicio</a>
+            <a href="mainInfo.html">Información principal</a>
+            <a href="jobExperience.html">Experiencia laboral</a>
+            <a href="personalRef.html">Referencias personales</a>
+            <a href="familyRef.html">Referencias familiares</a>
+            <a href="educationLvl.html">Estudios realizados</a>
+        </nav>
+        
+        <section class="flex-container">
+            <article class="toLeft"><img src="img/photo.png" alt="My photo"></article>
+            <article class="about toRight">
+                <h3>Acerca de mi:</h3>
+                <p> Soy una persona apasionada por la tecnología y el ciclismo!. Un Calarqueño
+                    que gusta de la naturaleza y un buen café; a nivel profesional, Cuento con 
+                    experiencia en aplicación de proyectos con sistemas embebidos, 
+                    administración y soporte de plataformas web de monitoreo satelital 
+                    de flotas de vehículos, creacion de manuales técnicos para uso de productos, 
+                    gestión de calidad, desarrollo e implementación de proyectos IoT y programación.
+                </p>
+                <p>
+                    En esta página demo podrá encontrar algunos de los aspectos que me caracterizan como profesional, si desea,
+                    puede descargar mi hoja en formato PDF haciendo click <a href="documents/CV18403220.pdf">AQUI</a>
+                </p>
+            </article>
+        </section>
+        <section>
+            <h3>Objetivo</h3>
+            <p>El objetivo de esta actividad consiste en comenzar a familiarizarse con la estructura
+                 y etiquetas de una página web en HTML5, además del manejo de estilos y etiquetas
+                de CSS3</p>
+        </section>
     </section>    
 </body>
 </html>

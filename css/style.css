@@ -1,0 +1,121 @@
+/* style applied to all the elements inside the DOM */
+  *{
+    box-sizing: border-box;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* requirement 4 for CSS practice */
+    background-color: rgb(245, 245, 241);
+  }
+
+  /* adding bottom margin to each element inside the webpage */
+  body > * {
+    margin: 5px 30px 30px 30px;
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #3b8aa1;
+    border: 2px solid #205f72;
+    font-size: 13px;
+  }
+
+  /* Style the navigation bar links */
+  /* requirement 1 for CSS practice */
+  .navbar a {
+    background-color: #3b8aa1;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+  }
+
+  /* Change bg color on hover */
+  /* Hover link: requirement 1 for CSS practice */
+  .navbar a:hover {
+    background-color: #a2d1df;
+    color: black;
+  }
+
+  /* Style the body */
+  body {
+    font-family: 'DM Sans', sans-serif;
+    /* Max width: requirement 2 for CSS practice */
+    max-width: 1024px;
+    /* Allign to center all the content inside the webpage, requirement 2 for CSS practice */
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(245, 245, 241);
+  }
+  
+  /* HeaderTitle */
+  .header {
+    padding: 80px;
+    text-align: center;
+  }
+
+  .toLeft img {
+    /* requirement 3 for CSS practice */
+    border: 10px solid #3b8aa1;
+    box-shadow: 10px 5px 5px #a2d1df;
+  }
+
+  /* Create two unequal columns that sits next to each other when shrinks the screen */
+  /* Sidebar/left column */
+
+  .flex-container {
+    display: flex;
+    margin: 20px auto;
+    padding: 20px 0;
+    align-items: center;
+    border-top: 1px solid #205f72;
+    border-bottom: 1px solid #205f72;
+  }
+
+  .toLeft {
+    flex: 40%;
+    margin: 5px;
+  }
+
+  .toRight {   
+    flex: 60%;
+    margin: 5px 30px 5px 30px;
+    padding: 20px;
+    border: 1px #3b8aa1 solid;
+    border-radius: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Responsive layout - when the screen is less than 900px wide, make all divs inside main stack on top of each other */
+  @media screen and (max-width: 900px) {
+    .main, .flex-container {
+      flex-direction: column;
+    }
+  
+  }
+  
+  /* Responsive layout - when the screen is less than 650px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 650px) {
+    .navbar {
+      display: block;
+    }
+
+    .navbar a {
+      display: block;
+      float: none;
+      width: 100%;
+    }
+    
+  }
