@@ -97,6 +97,25 @@
     padding: 20px;
     text-align: center;
   }
+
+  /* Job experience, personal refs, education level lists styles */
+  .listSummary {
+    background-color: #a2d1df;
+    padding: 20px;
+  }
+
+  .listSummary > * {
+    margin: 10px;
+  }
+
+  .accordion {
+    background-color: #205f72;
+    color: white;
+    border: #205f72 1px solid;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
   
   /* Responsive layout - when the screen is less than 900px wide, make all divs inside main stack on top of each other */
   @media screen and (max-width: 900px) {
