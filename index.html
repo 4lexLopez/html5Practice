@@ -12,6 +12,10 @@
     
     <!-- Style sheet link -->
     <link rel="stylesheet" href="/css/style.css">
+
+    <script src="src/index.js"></script>
+    <link rel="stylesheet" id="switcher-id" href="">
+
     <title>Mi hoja de vida</title>
     
 </head>
@@ -19,6 +23,13 @@
     <header>
         <h1>Mi hoja de vida</h1>
         <p>Bienvenidos!</p>
+
+        <!-- adding  selectors for each different visual theme for the webpage -->
+        <div class="theme-switches">
+            <div data-theme="sky" class="switch" id="switch-2"></div>
+            <div data-theme="light" class="switch" id="switch-1"></div>
+            <div data-theme="purple" class="switch" id="switch-3"></div>
+        </div>
     </header>
 
     <section class="main">

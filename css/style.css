@@ -2,13 +2,18 @@
   *{
     box-sizing: border-box;
   }
+  :root {
+    --light: #5d5d5d;
+    --sky: #205f72;
+    --purple: #874f5e;
+  }
 
   .main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     /* requirement 4 for CSS practice */
-    background-color: rgb(245, 245, 241);
+    background-color: #f5f5f1;
   }
 
   /* adding bottom margin to each element inside the webpage */
@@ -29,7 +34,6 @@
   /* requirement 1 for CSS practice */
   .navbar a {
     background-color: #3b8aa1;
-    float: left;
     color: white;
     text-align: center;
     padding: 15px 20px;
@@ -52,13 +56,43 @@
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(245, 245, 241);
+    background-color: #f5f5f1;
+  }
+
+  /* style for theme selectors */
+  .theme-switches {
+    display: flex;
+    justify-content: right;
   }
   
-  /* HeaderTitle */
-  .header {
-    padding: 80px;
-    text-align: center;
+  .switch {
+    border: 1px solid black;
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .switch:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+  }
+  
+  #switch-1 {
+    background-color: var(--light);
+  }
+  
+  #switch-2 {
+    background-color: var(--sky);
+  }
+  
+  #switch-3 {
+    background-color: var(--purple);
+  }
+  
+  #switch-4 {
+    background-color: var(--dark);
   }
 
   .toLeft img {
@@ -68,7 +102,7 @@
   }
 
   /* Create two unequal columns that sits next to each other when shrinks the screen */
-  /* Sidebar/left column */
+  /* photo/Summary */
 
   .flex-container {
     display: flex;
@@ -90,12 +124,6 @@
     padding: 20px;
     border: 1px #3b8aa1 solid;
     border-radius: 20px;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
   }
 
   /* Job experience, personal refs, education level lists styles */
